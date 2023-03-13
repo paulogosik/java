@@ -22,7 +22,5 @@ public class processamentoDeDados {
         System.out.println(area);
         System.out.println("=====================");
 
-        //Situação #3--------------------------------
-
     }
 }
