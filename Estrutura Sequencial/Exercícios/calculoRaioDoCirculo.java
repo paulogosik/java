@@ -13,6 +13,9 @@ public class calculoRaioDoCirculo {
 
         System.out.printf("=> Digite o valor do raio de um círculo: ");
         r = input.nextDouble();
+        area = pi * Math.pow(r, 2);
+
+        System.out.printf("=> A área do círculo é: %.4f", area);
 
         input.close();
 
