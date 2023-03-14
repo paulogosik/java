@@ -8,19 +8,18 @@ public class calculoDePecas {
         Locale.setDefault(Locale.US);
         Scanner input = new Scanner(System.in);
 
-        String code1, code2;
         double num1, num2, value1, value2, total;
 
         System.out.println("=={ PEÇA 1 }==");
         System.out.printf("=> Código: ");
-        code1 = input.next();
+        input.next();
         System.out.printf("=> Número de peças adquiridas: ");
         num1 = input.nextDouble();
         System.out.printf("=> Valor unitário da das peças: ");
         value1 = input.nextDouble();
         System.out.println("=={ PEÇA 2 }==");
         System.out.printf("=> Código: ");
-        code2 = input.next();
+        input.next();
         System.out.printf("=> Número de peças adquiridas: ");
         num2 = input.nextDouble();
         System.out.printf("=> Valor unitário da das peças: ");
