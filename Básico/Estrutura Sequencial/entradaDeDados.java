@@ -11,7 +11,8 @@ public class entradaDeDados {
         System.out.println("=> Quantos anos você tem?");
         idade = input.nextInt();
 
-        System.out.printf("=> Seu nome é %se você tem %d anos!", nome, idade);
+        System.out.printf("=> Seu nome é %s e você tem %d anos!", nome, idade);
+        input.close();
 
     }
     
