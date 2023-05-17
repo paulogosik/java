@@ -17,6 +17,13 @@ public class tiposDeString{
         System.out.printf("=> Replace('a', 'x'): %s\n", (texto.replace('a', 'x')));
         System.out.printf("=> Replace(\"Paulo\", \"Teste\"): %s\n\n", (texto.replace("Paulo", "Teste")));
 
+        System.out.println("=> Split() ---------------------------");
+        String[] vect = texto.split(" ");
+        System.out.printf("=> Separando por espaços: \n");
+        for (String palavra : vect) {
+            System.out.println(palavra);
+        }
+
     }
 }
 
