@@ -8,9 +8,13 @@ public class Main {
         Scanner input = new Scanner(System.in);
         Locale.setDefault(Locale.US);
 
-        double xA, xB, xC, yA, yB, yC;
-
         input.close();
+    }
+
+    public class Triangulo {
+        public double a;
+        public double b;
+        public double c;
     }
     
 }
