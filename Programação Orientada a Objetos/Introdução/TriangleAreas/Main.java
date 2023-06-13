@@ -29,11 +29,8 @@ public class Main {
         System.out.printf("=> Inform the 3° side of a Y triangle: ");
         y.c = input.nextDouble();
 
-        double p = (x.a + x.b + x.c) / 2.0;
-        double areaX = Math.sqrt(p * (p - x.a) * (p - x.b) * (p - x.c));
-
-        p = (y.a + y.b + y.c) / 2.0;
-        double areaY = Math.sqrt(p * (p - y.a) * (p - y.b) * (p - y.c));
+        double areaX = x.Area();
+        double areaY = y.Area();
 
         System.out.println("---------------------------------------");
         System.out.printf("=> Triangle X area: %.2f \n", areaX);
