@@ -1,4 +1,4 @@
-package TriangleAreas;
+package TriangleAreas.Entities;
 
 public class Entities {
     public double a;

@@ -1,13 +1,13 @@
 package TriangleAreas;
 import java.util.Scanner;
 import java.util.Locale;
-import TriangleAreas.Entities;
+import TriangleAreas.Entities.Entities;
 
 public class Main {
     public static void main(String[] args) {
         
-        Scanner input = new Scanner(System.in);
         Locale.setDefault(Locale.US);
+        Scanner input = new Scanner(System.in);
 
         Entities x, y;
         x = new Entities();
@@ -31,6 +31,19 @@ public class Main {
 
         double p = (x.a + x.b + x.c) / 2.0;
         double areaX = Math.sqrt(p * (p - x.a) * (p - x.b) * (p - x.c));
+
+        p = (y.a + y.b + y.c) / 2.0;
+        double areaY = Math.sqrt(p * (p - y.a) * (p - y.b) * (p - y.c));
+
+        System.out.println("---------------------------------------");
+        System.out.printf("=> Triangle X area: %.2f \n", areaX);
+        System.out.printf("=> Triangle Y area: %.2f \n", areaY);
+
+        if (areaX > areaY) {
+            System.out.println("=> Larger area: X");
+        } else {
+            System.out.println("=> Larger area: Y");
+        }
 
         input.close();
     }
