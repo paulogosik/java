@@ -1,7 +1,7 @@
 package TriangleAreas;
 import java.util.Scanner;
 import java.util.Locale;
-import TriangleAreas.Entities.Entities;
+import TriangleAreas.Entities.Triangle;
 
 public class Main {
     public static void main(String[] args) {
@@ -9,9 +9,9 @@ public class Main {
         Locale.setDefault(Locale.US);
         Scanner input = new Scanner(System.in);
 
-        Entities x, y;
-        x = new Entities();
-        y = new Entities();
+        Triangle x, y;
+        x = new Triangle();
+        y = new Triangle();
 
         System.out.printf("=> Inform the 1° side of a X triangle: ");
         x.a = input.nextDouble();
