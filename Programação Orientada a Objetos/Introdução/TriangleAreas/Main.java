@@ -12,6 +12,7 @@ public class Main {
 
         // Quando usamos o 'new' em 'new Triangle()' estamos dizendo que a variável está apontado para o objeto
         // Quando a variável está declarada com o 'new', novos objetos estão sendo alocados
+        // Também quando usamos o 'new' estamos instanciando um novo objeto da classe
         Triangle x, y;
         x = new Triangle();
         y = new Triangle();
