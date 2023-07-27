@@ -1,8 +1,10 @@
+// Está dentro do pacote pois está sendo considerado que Triangle{} é uma entidade
 package TriangleAreas.Entities;
 
 public class Triangle {
     // Foram criados membros para a classe Triange{}
     // Sendo eles a, b, c; Todos double e public
+    // Quando um membro é 'public' ele pode ser acessado por outro arquivo, é público
     public double a;
     public double b;
     public double c;
