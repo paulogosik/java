@@ -11,9 +11,9 @@ public class Triangle {
 
     // 'public' indica que esta função poderá ser usada em outro arquivo
     // 'double' indica que a função retornará um valor do tipo double
+    // Se a função não retornar nada, usamos 'void' no lugar do 'double'
     public double Area() {
         double p = (a + b + c) / 2.0;
         return Math.sqrt(p * (p - a) * (p - b) * (p - c));
     }
-    
 }

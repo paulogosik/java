@@ -34,6 +34,7 @@ public class Main {
         System.out.printf("=> Inform the 3° side of a Y triangle: ");
         y.c = input.nextDouble();
 
+        // Chamamos a função de acordo com o objeto, para ser calculado com os devidos valores de 'x' e 'y'
         double areaX = x.Area();
         double areaY = y.Area();
 
