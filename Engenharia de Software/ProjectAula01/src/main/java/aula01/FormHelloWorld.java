@@ -86,7 +86,7 @@ public class FormHelloWorld extends javax.swing.JFrame {
 
         taSaida.setColumns(20);
         taSaida.setRows(5);
-        taSaida.setBorder(javax.swing.BorderFactory.createTitledBorder("Saída: "));
+        taSaida.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Saida", javax.swing.border.TitledBorder.LEFT, javax.swing.border.TitledBorder.DEFAULT_POSITION));
         jScrollPane1.setViewportView(taSaida);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
