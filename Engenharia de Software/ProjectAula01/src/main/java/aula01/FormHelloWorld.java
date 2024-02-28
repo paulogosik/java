@@ -27,9 +27,19 @@ public class FormHelloWorld extends javax.swing.JFrame {
         return num1 - num2;
     }
     
+    public double divisao(double num1, double num2){
+        return num1/num2;
+    }
+    
+    public double multiplicacao(double num1, double num2){
+        return num1 * num2;
+    }
+    
     public void todasOperacoes(double num1, double num2){
         taSaida.setText("Soma: " + soma(num1, num2) +
-                        "\nSubtração: " + subtrai(num1, num2));
+                        "\nSubtração: " + subtrai(num1, num2) +
+                        "\nDivisão: " + divisao(num1, num2) +
+                        "\nMultiplicação: " + multiplicacao(num1, num2));
     }
 
     /**
