@@ -55,9 +55,9 @@ public class FormHelloWorld extends javax.swing.JFrame {
         tfNum1 = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
         tfNum2 = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
+        jButtonSoma = new javax.swing.JButton();
+        jButtonTodas = new javax.swing.JButton();
+        jButtonLimpa = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         taSaida = new javax.swing.JTextArea();
 
@@ -73,24 +73,24 @@ public class FormHelloWorld extends javax.swing.JFrame {
 
         jLabel2.setText("2° Número:");
 
-        jButton1.setText("+");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        jButtonSoma.setText("+");
+        jButtonSoma.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                jButtonSomaActionPerformed(evt);
             }
         });
 
-        jButton2.setText("Todas");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        jButtonTodas.setText("Todas");
+        jButtonTodas.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                jButtonTodasActionPerformed(evt);
             }
         });
 
-        jButton3.setText("Limpar");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        jButtonLimpa.setText("Limpar");
+        jButtonLimpa.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                jButtonLimpaActionPerformed(evt);
             }
         });
 
@@ -107,11 +107,11 @@ public class FormHelloWorld extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(105, 105, 105)
-                        .addComponent(jButton1)
+                        .addComponent(jButtonSoma)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton2)
+                        .addComponent(jButtonTodas)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton3))
+                        .addComponent(jButtonLimpa))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(134, 134, 134)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
@@ -140,9 +140,9 @@ public class FormHelloWorld extends javax.swing.JFrame {
                     .addComponent(tfNum2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton3)
-                    .addComponent(jButton2)
-                    .addComponent(jButton1))
+                    .addComponent(jButtonLimpa)
+                    .addComponent(jButtonTodas)
+                    .addComponent(jButtonSoma))
                 .addGap(18, 18, 18)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(32, Short.MAX_VALUE))
@@ -151,29 +151,29 @@ public class FormHelloWorld extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void jButtonSomaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonSomaActionPerformed
         double num1 = Double.parseDouble(tfNum1.getText());
         double num2 = Double.parseDouble(tfNum2.getText());
         
         taSaida.setText("Soma: " + soma(num1, num2));
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_jButtonSomaActionPerformed
 
     private void tfNum1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tfNum1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_tfNum1ActionPerformed
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    private void jButtonLimpaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonLimpaActionPerformed
         tfNum1.setText(null);
         tfNum2.setText(null);
         taSaida.setText(null);
-    }//GEN-LAST:event_jButton3ActionPerformed
+    }//GEN-LAST:event_jButtonLimpaActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void jButtonTodasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonTodasActionPerformed
         double num1 = Double.parseDouble(tfNum1.getText());
         double num2 = Double.parseDouble(tfNum2.getText());
         
         todasOperacoes(num1, num2);
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_jButtonTodasActionPerformed
 
     /**
      * @param args the command line arguments
@@ -211,9 +211,9 @@ public class FormHelloWorld extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
+    private javax.swing.JButton jButtonLimpa;
+    private javax.swing.JButton jButtonSoma;
+    private javax.swing.JButton jButtonTodas;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JScrollPane jScrollPane1;
