@@ -31,6 +31,7 @@ public class FormLearningUsages extends javax.swing.JFrame {
         jButtonPrint = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         taPrinted = new javax.swing.JTextArea();
+        jButtonClean = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -53,22 +54,33 @@ public class FormLearningUsages extends javax.swing.JFrame {
         taPrinted.setRows(5);
         jScrollPane1.setViewportView(taPrinted);
 
+        jButtonClean.setText("Clean");
+        jButtonClean.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonCleanActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addGroup(layout.createSequentialGroup()
-                            .addGap(82, 82, 82)
+                            .addGap(88, 88, 88)
                             .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                             .addComponent(tfPhrase, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(layout.createSequentialGroup()
-                            .addGap(159, 159, 159)
-                            .addComponent(jButtonPrint))))
+                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                            .addGap(81, 81, 81)
+                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(110, 110, 110)
+                        .addComponent(jButtonPrint)
+                        .addGap(29, 29, 29)
+                        .addComponent(jButtonClean)))
                 .addContainerGap(85, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -79,7 +91,9 @@ public class FormLearningUsages extends javax.swing.JFrame {
                     .addComponent(jLabel1)
                     .addComponent(tfPhrase, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
-                .addComponent(jButtonPrint)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButtonPrint)
+                    .addComponent(jButtonClean))
                 .addGap(18, 18, 18)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(40, Short.MAX_VALUE))
@@ -94,9 +108,16 @@ public class FormLearningUsages extends javax.swing.JFrame {
 
     private void jButtonPrintActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonPrintActionPerformed
         String phrase = tfPhrase.getText();
-        tfPhrase.setText(null);
         taPrinted.append(phrase + "\n");
+        tfPhrase.setText(null);
+        tfPhrase.requestFocus();
     }//GEN-LAST:event_jButtonPrintActionPerformed
+
+    private void jButtonCleanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonCleanActionPerformed
+        taPrinted.setText(null);
+        tfPhrase.setText(null);
+        tfPhrase.requestFocus();
+    }//GEN-LAST:event_jButtonCleanActionPerformed
 
     /**
      * @param args the command line arguments
@@ -134,6 +155,7 @@ public class FormLearningUsages extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButtonClean;
     private javax.swing.JButton jButtonPrint;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
