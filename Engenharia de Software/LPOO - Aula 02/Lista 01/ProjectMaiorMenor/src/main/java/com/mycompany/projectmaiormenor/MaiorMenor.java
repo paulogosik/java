@@ -53,6 +53,11 @@ public class MaiorMenor extends javax.swing.JFrame {
         jLabel1.setText("Número:");
 
         jButton1.setText("OK");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         jLabel2.setText("Maior");
 
@@ -109,6 +114,13 @@ public class MaiorMenor extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        guardarMaiorMenor(Integer.parseInt(tfNumero.getText()));
+        taSaida.append(tfNumero.getText()+" | ");
+        tfNumero.setText(null);
+        tfNumero.requestFocus();
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
