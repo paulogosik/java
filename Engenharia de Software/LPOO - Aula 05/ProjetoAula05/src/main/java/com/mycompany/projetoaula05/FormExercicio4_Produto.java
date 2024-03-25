@@ -80,7 +80,15 @@ public class FormExercicio4_Produto extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        taSaida.setText("Nome Produto: " + prod.nome +
+        
+        /*try{
+            prod.preco = 3499;
+        }
+        catch(Number{
+            
+        }*/
+        
+        taSaida.setText("Nome Produto: " + prod.getNome() +
                 "\nValor: R$" + prod.preco + 
                 "\nQuantidade estoque: " + prod.qtEstoque);
         

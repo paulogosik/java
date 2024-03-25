@@ -21,4 +21,9 @@ public class Produto {
         }
         return false;
     }
+    
+    public String getNome(){
+        return nome;
+    }
+    
 }
