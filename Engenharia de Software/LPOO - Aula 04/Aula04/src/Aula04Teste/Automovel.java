@@ -1,7 +1,6 @@
 package Aula04Teste;
 
 public class Automovel {
-    Ult Ult = new Ult();
     String placa, marca, modelo;
     int ano;
     private boolean ligado = false;
@@ -23,7 +22,6 @@ public class Automovel {
     }
 
     public void CarroInfos(){
-        Ult.Linha();
         System.out.println("Placa: " + placa);
         System.out.println("Marca: " + marca);
         System.out.println("Modelo: " + modelo);
