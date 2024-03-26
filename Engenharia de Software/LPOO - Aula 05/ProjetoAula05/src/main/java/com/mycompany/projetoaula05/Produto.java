@@ -5,6 +5,14 @@ public class Produto {
     double preco;
     int qtEstoque;
     
+    public Produto(){}
+    
+    public Produto(String nome, double preco, int qtEstoque){
+        this.nome = nome;
+        this.preco = preco;
+        this.qtEstoque = qtEstoque;
+    }
+    
     public void aumentarPreco(double percAumento){
         double aumento = (preco * percAumento) / 100;
         preco += aumento;
@@ -26,4 +34,7 @@ public class Produto {
         return nome;
     }
     
+    public void setNome(String nome){
+        this.nome = nome;
+    }    
 }
